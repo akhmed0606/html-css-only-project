@@ -1,0 +1,714 @@
+/* NORMALIZE et al begins */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    background: #F4F3F0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+section {
+    margin: 75px 0;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 65px;
+    width: 750px;
+    padding: 75px 0 100px 0;
+}
+
+h1,
+h2,
+h3,
+button,
+p.clientName,
+.footerNav p {
+    font-weight: 600;
+}
+
+h1,
+h3,
+.location p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+
+h3,
+button {
+    font-size: 1.6rem;
+}
+
+p {
+    line-height: 30px;
+}
+
+span {
+    display: inline-block;
+    border-bottom: 2px solid #B18F39;
+    padding-bottom: 10px;
+}
+
+button {
+    color: #FFF;
+    background: #B18F39;
+    border: none;
+    padding: 15px 25px;
+}
+
+nav,
+p {
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.headerLinks a:hover {
+    color:#B18F39;
+}
+
+.logo {
+    font-size: 2.8rem;
+    color:#B18F39;
+}
+
+.logo,
+.headerLinks, 
+button, 
+h3 {
+    text-transform: uppercase;
+}
+
+ul.headerLinks {
+    padding: 0;
+}
+
+.headerLinks li {
+    padding: 20px 0;
+}
+
+.practiceText p
+ {
+    margin: 30px 0;
+}
+.spotlightContainer p,
+.spotlightContainer h2{
+    margin-left:  10px;
+}
+.spotlightContainer p,
+.contactContainer p {
+    width: 480px;
+}
+
+p.clientTitle,
+.footerNavList p {
+    font-size: 2rem;
+}
+
+
+.clientText p {
+    font-size: 3rem;
+    line-height: 45px;
+    width: 100%;
+    margin: 0 0 45px 0;
+}
+
+
+p.clientName {
+    font-size: 2.4rem;
+}
+
+p.clientName,
+p.clientTitle {
+    margin: 0;
+}
+
+
+.contentEnd {
+    border-top: 1px solid #9C9B98;
+    color: #9C9B98;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+.navContent,
+.practiceContent,
+.spotlight-assets,
+.contactForm,
+.footerContent {
+    flex-wrap: wrap;
+}
+
+.headerContent,
+.nameForm,
+.emailForm,
+.message,
+.clientContainer,
+.clientInfo,
+.clientProfile,
+footer.container,
+.footer-list {
+    flex-direction: column;
+}
+
+.navContent,
+.headerLinks,
+.practiceContent,
+.contactForm,
+.clientInfo,
+footer.container,
+.footerContent,
+.footerNav {
+    justify-content: space-between;
+}
+
+.headerContent {
+    align-items: center;
+}
+
+.navContent {
+    position: relative;
+}
+
+.headerLinks {
+    width: 480px;
+}
+
+header {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.header-assets {
+    width: 100%;
+    position: relative;
+}
+
+.headerImg {
+    height: 550px;
+}
+
+.practiceText {
+    width: 45%;
+    padding-right: 75px;
+}
+
+.practice-assets {
+    width: 50%;
+    position: relative;
+}
+
+.practiceText,
+.practice-assets {
+    height: 600px;
+}
+
+.practiceImg1,
+.practiceImg2 {
+    width: 60%;
+    height: 75%;
+}
+
+.practiceImg1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+}
+
+.practiceImg2 {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.spotlight-assets img {
+    padding: 10px;
+}
+
+.spotlight1,
+.spotlight2 {
+    width: 50%;
+    height: 425px;
+    position: relative;
+}
+
+.spotlight1 h3,
+.spotlight2 h3 {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.spotlight2 {
+    width: calc(100%/3);
+}
+
+.practiceContent  button,
+.contactContainer button {
+   letter-spacing: 1px;
+    }
+.contactContainer {
+    background-image: url(./static/image8.jpg);
+    background-size: cover;
+    padding: 50px 0 100px 0;
+}
+
+.contactForm {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.contactForm input {
+    height: 45px;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+input,
+textarea {
+    border: 1px solid #B18F39;
+}
+
+.nameForm {
+    width: 45%;
+}
+
+.emailForm {
+    width: 50%;
+}
+
+.message {
+    width: 100%;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 25px;
+    height: 235px;
+}
+
+.clientText {
+    width: 720px;
+    height: auto;
+    border-left: 5px solid #B18F39;
+    padding-left: 35px;
+    margin-top: 15px;
+}
+
+.clientInfo {
+    position: relative;
+}
+
+.clientImgProfile {
+    width: 100%;
+}
+
+.clientImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.clientProfile {
+    width: 35%;
+    justify-content: flex-end;
+    padding-left: 25px;
+}
+
+.arrow {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+.arrow img {
+    object-fit: contain;
+}
+
+.footerImg {
+    height: 420px;
+}
+
+.footer-list p {
+    padding-left: 40px;
+    margin: 30px 0 10px 0;
+}
+
+.footer-list a {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 10px 0;
+}
+
+
+.footerContent {
+    margin-top: 75px;
+}
+
+.footerInfo {
+    width: 50%;
+}
+
+.footerNav {
+    width: 50%;
+}
+
+@media (max-width: 975px) {
+    
+    h1 {
+        font-size: 4rem;
+        width: 75%;
+        padding-top: 25px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+     
+    .contentEnd p,
+    .practiceText p,
+    .spotlightContainer p,
+    .contactContainer p,
+    .location p,
+    .contactInfo p,
+    .footerNav a {
+        font-size: 1.6rem;
+    }
+    
+    .practiceText,
+    .practice-assets {
+        height: 500px;
+    }
+
+    .practiceText {
+        padding: 10px;
+    }
+
+    .practiceText h2 {
+        margin-top: 0;
+    }
+
+    .practiceText p {
+        margin-bottom: 10px;
+    }
+
+    .practiceContent  button,
+    .contactContainer button {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .contactContainer button {
+        width: 75%;
+    }
+
+    .clientText p {
+        font-size: 2.8rem;
+    }
+
+    p.clientName {
+        font-size: 2.2rem;
+    }
+
+    p.clientTitle,
+    .footerNav p {
+        font-size: inherit;
+    }
+
+
+    .spotlight1,
+    .spotlight2 {
+        height: 400px;
+    }
+
+    .contactForm {
+        width: 75%;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .headerLinks {
+        width: 90%;
+    }
+    
+    .navContent {
+        justify-content: center;
+    }
+
+    .practiceText,
+    .practice-assets {
+        width: 100%;
+    }
+
+    .practiceText {
+        height: auto;
+    }
+
+    .practice-assets {
+        height: 700px;
+        margin-top: 50px;
+    }
+
+    .spotlight1,
+    .spotlight2 {
+        height: 300px;
+    }
+
+    .contactForm {
+        width: 75%;
+        margin-top: 50px;
+    }
+
+    .clientText {
+        width: 100%;
+    }
+
+    .footerInfo,
+    .footerNav {
+        width: 100%;
+    }
+
+    .footerInfo {
+        border-bottom: 1px solid #9C9B98;
+    }
+
+    .footerNav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-list {
+        margin-top: 20px;
+    }
+
+    .footer-list p,
+    .footer-list ul {
+        padding: 0;
+    }
+
+    .footer-list p {
+        margin: 0;
+    }
+
+    .footer-list ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-list li {
+        padding-right: 50px;
+    }
+}
+
+
+@media (max-width: 675px) {
+    h1 {
+        font-size: 3.6rem;
+        line-height: 55px;
+        width: 100%;
+    }
+
+    .headerLinks {
+        font-size: 1.6rem;
+    }
+
+    .headerImg {
+        height: 500px;
+    }
+
+    .practiceImg1,
+    .practiceImg2 {
+        height: 65%;
+    }
+
+    .spotlight1,
+    .spotlight2{
+        width: 100%;
+    }
+
+    .spotlight1 h3,
+    .spotlight2 h3 {
+        width: 455px;
+        margin: 0;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .spotlight1 {
+        height: 375px;
+    }
+
+    .spotlight2 {
+        height: 475px;
+    }
+    
+    .spotlightContainer p,
+    .contactContainer p {
+        width: 75%;
+    }
+
+    .contactForm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nameForm,
+    .emailForm {
+        width: 100%;
+    }
+    .contactContainer button {
+        width: 100%;
+    }
+
+    .arrowProfile {
+        flex-direction: column;
+    }
+
+    .clientProfile {
+        width: 100%;
+    }
+ 
+    .arrow {
+        width: 125px;
+        bottom: -30px;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
+
+    .footerContent {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navContent {
+        justify-content: space-between;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+        line-height: 40px;
+    }
+
+    .headerImg {
+        height: 400px;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+    
+
+    .practiceContent  button,
+    .contactContainer button {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .practice-assets {
+        height: 500px;
+    }
+
+    .spotlight1,
+    .spotlight2 {
+        height: 350px;
+    }
+
+    
+
+    .spotlightContainer p,
+    .contactContainer p {
+        width: 100%;
+    }
+
+    .clientText p {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .footerImg {
+        height: 375px;
+    }
+    
+    .footer-list li {
+        padding-right: 35px;
+    }
+
+    .contentEnd p {
+        font-size: 1.2rem;
+    }
+}
