@@ -1,6 +1,6 @@
 ### html-css-only-project
 
-*My  first responsive project I've done in Juno College as part of the web-dev cource using*
+*My first responsive project I've done in Juno College as part of the web-dev cource.*
 
 - `HTML`
 - `CSS`
